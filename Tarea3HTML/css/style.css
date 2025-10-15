@@ -1,0 +1,46 @@
+/* PARA AMBAS TABLAS */
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+#amarillo {
+    background-color: #ffff00;
+}
+
+/* TABLA 1 */
+caption {
+    color: #649659;
+}
+
+thead th::first-letter {
+    font-size: 2em;
+}
+
+#horario {
+    background-color: green;
+}
+
+
+/* TABLA 2 */
+#azul {
+    background-color: #0000fe;
+}
+
+#columna1 {
+    background-color: #fe0000;
+    color: white;
+}
+
+#gigas {
+    background-color: #808080;
+    font-size: 30px;
+    text-align: center;
+}
+
+.letraroja {
+    color: #fe0000;
+}
