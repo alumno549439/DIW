@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+  --alto-header: 60px; /* lo busqué, el doble guión define unas variables personalizadas */
+  --ancho-maximo: 1000px;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #ffff99;
+  color: #222;
+  line-height: 1.5;
+}
+
+.header-fijo {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 60px;
+  background: #182848;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.contenedor {
+  width: 100%;
+  padding-top: var(--alto-header);
+}
+
+.principal {
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.demo-display {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.display-inline {
+  display: inline;
+  background: #ffeedd;
+  padding: 4px 8px;
+}
+
+.display-inlineblock {
+  display: inline-block;
+  background: #e8f4ff;
+  padding: 8px;
+  width: 140px;
+}
+
+.display-block {
+  display: block;
+  background: #eaffef;
+  padding: 8px;
+}
+
+.centrar-texto {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: .5rem;
+}
+
+.centrar-bloque {
+  width: 60%;
+  margin: 1rem auto;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: .5rem;
+}
+
+.centrar-vertical-texto {
+  height: 60px;
+  line-height: 60px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.centrar-vertical-bloque {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+
+.pos-static {
+  position: static;
+  border: 1px dashed #aaa;
+  padding: 6px;
+}
+
+.pos-relativo {
+  position: relative;
+  border: 1px dashed #aaa;
+  padding: 6px;
+  margin-top: 10px;
+}
+
+.pos-absoluto {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: #ffdcdc;
+  padding: 4px 6px;
+  border-radius: 6px;
+}
+
+.scroll-sticky {
+  height: 200px;
+  overflow: auto;
+  border: 1px solid #ccc;
+  margin-top: 1rem;
+}
+
+.pos-sticky {
+  position: sticky;
+  top: 0;
+  background: #fff8c2;
+  padding: 6px;
+}
+
+.scroll-contenido {
+  height: 300px;
+  padding: 8px;
+}
+
+.capas {
+  position: relative;
+  height: 120px;
+  margin-top: 1rem;
+}
+
+.capa {
+  position: absolute;
+  width: 150px;
+  height: 80px;
+  padding: 6px;
+}
+
+.capa1 {
+  background: #a5d8ff;
+  top: 10px;
+  left: 10px;
+  z-index: 5;
+}
+
+.capa2 {
+  background: #ffd6a5;
+  top: 40px;
+  left: 60px;
+  z-index: 3;
+}
+
+.texto-columnas {
+  column-count: 3;
+  column-gap: 1rem;
+  column-rule: 2px dotted #ddd;
+  padding: 1rem;
+  background: #fafaff;
+  border-radius: 8px;
+}
+
+.demo-float {
+  border: 1px dashed #ccc;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.float-izquierda {
+  float: left;
+  width: 160px;
+  background: #e8ffe8;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.float-derecha {
+  float: right;
+  width: 160px;
+  background: #e8f0ff;
+  padding: 8px;
+  margin-left: 10px;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1, h2 { 
+    margin-bottom: .5rem; 
+}
+
+.seccion {
+  margin-bottom: 2rem;
+}
+
+code {
+  background: #f1f2f6;
+  padding: 2px 6px;
+  border-radius: 4px;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maqutación CSS</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <header class="header-fijo">
+        <h1>Ejemplo básico de maquetación</h1>
+      </header>
+
+      <main class="principal">
+        <section class="seccion">
+          <h2>DISPLAY: inline · inline-block · block</h2>
+          <div class="demo-display">
+            <span class="display-inline">Elemento inline</span>
+            <span class="display-inlineblock">Elemento inline-block</span>
+            <div class="display-block">Elemento block</div>
+          </div>
+        </section>
+
+        <section class="seccion layout">
+          <h2>LAYOUT: fijo · elástico · fluido · híbrido</h2>
+          <p>
+            El <code>header</code> es fijo (usa <code>position:fixed</code>),
+            este contenido principal es elástico (usa <code>rem</code>), y este
+            bloque tiene ancho híbrido (porcentaje + máximo ancho).
+          </p>
+        </section>
+
+        <section class="seccion">
+          <h2>BOX-SIZING</h2>
+          <p>
+            Se aplica <code>box-sizing: border-box</code> a todos los elementos
+            y pseudo-elementos.
+          </p>
+        </section>
+
+        <section class="seccion">
+          <h2>CENTRADO</h2>
+          <div class="centrar-texto">
+            Centrado horizontal con <code>text-align:center</code>
+          </div>
+          <div class="centrar-bloque">
+            Centrado de bloque con <code>margin:0 auto</code>
+          </div>
+          <div class="centrar-vertical-texto">
+            Texto centrado verticalmente con <code>line-height</code>
+          </div>
+          <div class="centrar-vertical-bloque">
+            Centrado vertical de bloque con <code>flexbox</code>
+          </div>
+        </section>
+
+        <section class="seccion">
+          <h2>
+            POSITION: static · relative · absolute · fixed · sticky · z-index
+          </h2>
+          <p class="pos-static">
+            Este es un elemento con <code>position: static</code>.
+          </p>
+          <div class="pos-relativo">
+            Contenedor relativo
+            <div class="pos-absoluto">Elemento absoluto</div>
+          </div>
+
+          <div class="scroll-sticky">
+            <div class="pos-sticky">Elemento sticky</div>
+            <div class="scroll-contenido">
+              Desplázate para ver el efecto sticky.
+            </div>
+          </div>
+
+          <div class="capas">
+            <div class="capa capa1">Capa 1 (z-index 5)</div>
+            <div class="capa capa2">Capa 2 (z-index 3)</div>
+          </div>
+        </section>
+
+        <section class="seccion">
+          <h2>COLUMNAS</h2>
+          <div class="texto-columnas">
+            <p>
+              Este texto se divide en tres columnas gracias a
+              <code>column-count</code>, <code>column-gap</code> y
+              <code>column-rule</code>.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              vitae nunc vel arcu posuere lacinia.
+            </p>
+            <p>
+              Phasellus tincidunt arcu et nisl sodales, vitae tincidunt nunc
+              ultricies. Sed et dui sit amet magna aliquam tincidunt.
+            </p>
+          </div>
+        </section>
+
+        <section class="seccion">
+          <h2>FLOTANTES: float y clearfix</h2>
+          <div class="demo-float clearfix">
+            <div class="float-izquierda">Caja izquierda (float:left)</div>
+            <div class="float-derecha">Caja derecha (float:right)</div>
+            <p>
+              El texto rodea las cajas flotantes. El contenedor usa
+              <code>.clearfix</code> para evitar colapsos.
+            </p>
+            <p style="clear: both">
+              Este párrafo usa <code>clear:both</code> y se coloca debajo de las
+              cajas flotadas.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
