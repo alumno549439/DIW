@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
+}
+
+header, nav, main, section, .container { /* Contenedor general que engloba todos los elementos en el BODY de mi ...*/
+    margin: 20px auto; /* Centra nuestro contenedor global horizontalmente y le aplica un margen superior de 20px */
+    width: 90%; /* Le da un ancho del 80% para qye no llegue hasta el borde de la pantalla */
+}
+
+nav ul {        /* CONTENEDOR FLEX */
+    display: flex; /* HABILITAMOS LA PROPIEDAD FLEX */
+    flex-flow: row wrap; /* DIRECCIÓN Y AJUSTE */
+    justify-content: space-around; /* Alineación horizontal */
+    align-items: center; /* Alineación vertical */
+    background-color: aqua;
+    /*
+    con flex flow controlamos las dos propiedades
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    */
+    list-style: none; /*Quitamos los puntos de la lista*/
+    height: 3em;
+}
+
+nav li {
+    background-color: red;
+    border: none;
+    flex-basis: 20%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-self: flex-end;
+}
+
+nav li:nth-child(1) {
+    order: 4;
+}
+
+nav li:nth-child(2), nav li:nth-child(4) {
+    background-color: blue;
+    align-self: flex-start;
+}
+
+section {       /* CONTENEDOR GRID */
+    display: grid;
+    grid-template-columns: repeat(3, 20%); /* [Nombre] 20% [Apellidos] 20% [DNI] 20% */
+    grid-template-rows: repeat(3, auto);
+    place-items: stretch stretch;
+    place-content: stretch space-around;
+    height: 10em;
+}
+
+section article:nth-child(2) {
+    background-color: pink;
+    grid-row: 1/4;
+    grid-column: 2/3;
+    /* grid: 1 2 3 4; filaInicio colInicio filaFin colFin*/
+    /* grid-row-start: 1;
+    grid-row-end: span 3; */
+}
+
+footer {
+    display: grid;
+    grid-template-areas: 
+    "rrss rrss rrss rrss"
+    "con . . con"
+    ". cop cop .";
+    height: 10em;
+}
+
+#rrss {
+    background-color: salmon;
+    grid-area: rrss;
+}
+
+#contact {
+    background-color: skyblue;
+    grid-area: con;
+}
+
+#copy {
+    background-color: palegreen;
+    grid-area: cop;
+}

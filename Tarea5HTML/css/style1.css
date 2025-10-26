@@ -1,0 +1,26 @@
+.header {
+    background-color: #333333;
+    color: #d0d5d4;
+    font-size: x-large;
+    text-indent: 5px;
+    padding: 10px;
+}
+
+.flex {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #cccccc;
+}
+
+.flex li {
+    text-align: center;
+    border: 1px solid white;
+    font-size: small;
+    padding: 6px;
+}
+
+.flex a {
+    color: black;
+
+}

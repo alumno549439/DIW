@@ -1,0 +1,34 @@
+.h1 {
+    padding: 40px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex; 
+    gap: 15px; 
+    max-width: 1200px;
+    width: 100%;
+    padding: 15px;
+}
+
+.gallery-column {
+    flex: 1 1 200px;
+    display: flex; 
+    flex-direction: column;
+    gap: 15px;
+    justify-content: flex-start;
+    min-width: 180px;
+}
+
+.gallery-column img {
+    margin-left: 180px;
+    width: 100%; 
+    height: auto; 
+    display: block;
+}

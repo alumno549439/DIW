@@ -1,0 +1,20 @@
+.header {
+    background-color: #333333;
+    color: #d0d5d4;
+    font-size: x-large;
+    text-indent: 5px;
+    padding: 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    background-color: #cccccc;
+    
+}
+
+.flex img {
+    border: 1px solid #979797;
+    width: 200px;
+    padding: 15px 10px;
+}
