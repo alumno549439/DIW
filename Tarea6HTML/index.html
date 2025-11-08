@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MI WEB RESPONSIVA</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: black;
+                color: #FFFFFF;
+                
+            }
+
+            h1, h2 {
+                font-family: Georgia, 'Times New Roman', Times, serif; 
+                margin-top: 0;
+            }
+
+            a {
+                text-decoration: none; /* Para quitar el subrayado del "link" */
+                color: white; 
+            }
+
+            .header {
+                background-color: #52677C; 
+                padding: 20px;
+                text-align: center;
+                
+            }
+
+            .header-content h1 {
+                color: #F8EF9C;
+                margin-bottom: 10px;
+            }
+
+            .main-nav ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex; 
+                justify-content: center;
+                gap: 20px; 
+            }
+
+            .main-nav a {
+                color: #FFFFFF;
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+
+            .main-nav a:hover {
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+
+            .main-container {
+                padding: 20px 10px; 
+                max-width: 1200px; 
+                margin: 0 auto; 
+            }
+
+            .song-list {
+                display: flex; 
+                flex-direction: column; 
+                gap: 20px; 
+                align-items: center; 
+            }
+
+            .song-card {
+                background-color: rgba(255, 255, 255, 0.1); 
+                border-radius: 10px;
+                padding: 15px;
+                text-align: center;
+                width: 90%;
+                min-height: 350px;
+                flex-shrink: 0; 
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between; 
+                align-items: center;
+            }
+
+            .song-cover {
+                width: 100%; 
+                max-width: 200px; 
+                height: 200px;
+                border-radius: 5px;
+                margin: 0 auto 10px;
+                display: block;
+                object-fit: cover; 
+            }
+
+            .song-title {
+                font-weight: bold;
+                color: #EDC4C4;
+                margin-bottom: 5px;
+            }
+
+            .song-artist {
+                font-weight: normal; 
+                font-size: 0.9em;
+                color: #EAE3E3;
+                margin-bottom: 15px;
+            }
+
+            .btn-lyrics {
+                display: inline-block;
+                background-color: #52677C;
+                color: #FFFFFF;
+                padding: 8px 15px;
+                border-radius: 5px;
+                margin-top: auto;
+            }
+
+            .btn-lyrics:hover {
+                background-color: #7F93A8;
+                transform: translateY(-2px); /* Hace que al pasar el cursor, el botón se eleve sutilmente */
+            }
+
+            .footer {
+                background-color: #52677C; 
+                color: #FFFFFF;
+                text-align: center;
+                padding: 15px;
+                margin-top: 40px;
+                font-size: 0.8em;
+            }
+
+            @media screen and (min-width: 600px) {
+                .song-list {
+                    flex-direction: row; 
+                    flex-wrap: wrap; 
+                    justify-content: center; 
+                }
+
+                .song-card {
+                    max-width: 280px; 
+                }
+            }
+
+
+            @media screen and (min-width: 992px) {
+                .song-card {
+                    width: calc(25% - 40px); 
+                }
+            }
+
+            @media screen and (min-width: 768px) {
+                .header-content {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 0 20px;
+                }
+
+                .main-header h1 {
+                    margin-bottom: 0;
+                }
+            }
+        </style>
+
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-content">
+                <h1>CATÁLOGO MUSICAL</h1>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Recomendaciones</a></li>
+                        <li><a href="#">Géneros</a></li>
+                        <li><a href="#">Artistas</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main-container">
+            <section class="song-list">
+                <article class="song-card">
+                    <img src="https://cdn-images.dzcdn.net/images/cover/8382389d964d882e3652a44d0279b8d0/500x500-000000-80-0-0.jpg" class="song-cover"/>
+                    <h2 class="song-title">Orbit</h2>
+                    <p class="song-artist">Christopher</p>
+                    <a href="#" class="btn-lyrics">Ver letra</a>
+                </article>
+
+                <article class="song-card">
+                    <img src="https://cdn-images.dzcdn.net/images/cover/311bba0fc112d15f72c8b5a65f0456c1/500x500-000000-80-0-0.jpg" class="song-cover"/>
+                    <h2 class="song-title">Instant Crush</h2>
+                    <p class="song-artist">Daft Punk (feat. Julian Casablancas)</p>
+                    <a href="#" class="btn-lyrics">Ver letra</a>
+                </article>
+
+                <article class="song-card">
+                    <img src="https://cdn-images.dzcdn.net/images/cover/525bec8b11c267748603bed582758fcb/500x500-000000-80-0-0.jpg" class="song-cover"/>
+                    <h2 class="song-title">Delete ya</h2>
+                    <p class="song-artist">Djo</p>
+                    <a href="#" class="btn-lyrics">Ver letra</a>
+                </article>
+
+                <article class="song-card">
+                    <img src="https://cdn-images.dzcdn.net/images/cover/7e71ed244754d773057c656179d79e7c/1900x1900-000000-80-0-0.jpg" class="song-cover"/>
+                    <h2 class="song-title">Waiting is a waste</h2>
+                    <p class="song-artist">Mina Okabe</p>
+                    <a href="#" class="btn-lyrics">Ver letra</a>
+                </article>
+
+                <article class="song-card">
+                    <img src="https://cdn-images.dzcdn.net/images/cover/954b5cac632d1cea45296d18fbb656c7/500x500-000000-80-0-0.jpg" class="song-cover"/>
+                    <h2 class="song-title">Light switch</h2>
+                    <p class="song-artist">Charlie Puth</p>
+                    <a href="#" class="btn-lyrics">Ver letra</a>
+                </article>
+
+                <article class="song-card">
+                    <img src="https://cdn-images.dzcdn.net/images/cover/1e0f95b8fc257414dd50febeaa2b75a1/0x1900-000000-80-0-0.jpg" class="song-cover"/>
+                    <h2 class="song-title">Dancing with my phone</h2>
+                    <p class="song-artist">HYBS</p>
+                    <a href="#" class="btn-lyrics">Ver letra</a>
+                </article>
+
+                <article class="song-card">
+                    <img src="https://cdn-images.dzcdn.net/images/cover/aa506003c35ef3d112bccc1bef4354eb/0x1900-000000-80-0-0.jpg" class="song-cover"/>
+                    <h2 class="song-title">Conversations in the dark</h2>
+                    <p class="song-artist">John Legend</p>
+                    <a href="#" class="btn-lyrics">Ver letra</a>
+                </article>
+
+                <article class="song-card">
+                    <img src="https://cdn-images.dzcdn.net/images/cover/6130b115119b0540401c652c487463cc/500x500-000000-80-0-0.jpg" class="song-cover"/>
+                    <h2 class="song-title">Lightning in a bottle</h2>
+                    <p class="song-artist">James Smith</p>
+                    <a href="#" class="btn-lyrics">Ver letra</a>
+                </article>
+
+                <article class="song-card">
+                    <img src="https://cdn-images.dzcdn.net/images/cover/205452d5994e408572abf2d49481a057/1900x1900-000000-80-0-0.jpg" class="song-cover"/>
+                    <h2 class="song-title">That's so true</h2>
+                    <p class="song-artist">Gracie Abrams</p>
+                    <a href="#" class="btn-lyrics">Ver letra</a>
+                </article>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Catálogo Musical. Todos los derechos reservados</p>
+        </footer>
+    </body>
+</html>
