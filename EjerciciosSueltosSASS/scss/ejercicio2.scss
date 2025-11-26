@@ -1,0 +1,17 @@
+
+$light-theme: true;
+$dark-theme: true;
+
+header {
+    @if $light-theme == true {
+        background-color: #fff;
+        color: #000;
+    } @else if $dark-theme {
+        background-color: #000;
+        color: #fff;
+    } @else {
+        background-color: #aaa;
+        color: #444;
+    }
+    
+}

@@ -1,0 +1,73 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #84b736;
+  padding: 0.2rem;
+}
+nav ul li {
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+nav ul li.active {
+  color: #fff;
+  font-weight: bolder;
+}
+nav ul li:hover {
+  color: #fff;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+.flag {
+  width: 24px;
+  height: 16px;
+  margin-right: 0.5rem;
+  border-radius: 0.2rem;
+  box-shadow: 0 0 0.2rem #888;
+  vertical-align: middle;
+}
+
+.card {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 0.1rem solid #333;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem #888;
+  background: #fff;
+}
+.card img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.card figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card:nth-of-type(2) {
+  background: #b7e19f;
+}
+
+.card:nth-of-type(3) {
+  background: #1f7bff;
+}
+
+.card:nth-of-type(4) {
+  background: #e2be36;
+}
+
+.card:nth-of-type(5) {
+  background: #da9cca;
+}
+
+/*# sourceMappingURL=style.css.map */

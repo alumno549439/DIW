@@ -1,0 +1,126 @@
+// --------------------------------------
+// VARIABLES ORIGINALES
+// --------------------------------------
+
+// Colores generales
+$color-background: #fff;
+$color-button-active: orange;
+$color-base: #333;
+
+// Colores de botones
+$color-error: #ff0000;
+$color-warning: #fdff86;
+$color-accepted: #286400;
+$color-normal: #006eff;
+$color-shadow: #888;
+
+// Colores menú
+$navbar-background-color: #84b736;
+$navbar-color-hover: $color-background;
+
+// Colores del borde
+$border-color: $color-base;
+$border-style: solid;   // ← corregido (antes estaba entre comillas)
+$border-width: 0.1rem;
+
+$border-radius: 1rem;
+
+$main-container-width: 80%;
+
+// --------------------------------------
+// CONTENEDOR PRINCIPAL
+// --------------------------------------
+
+.container {
+    width: $main-container-width;
+    margin: 0 auto;
+}
+
+// --------------------------------------
+// MENÚ NAVBAR
+// --------------------------------------
+
+nav {
+    background-color: $navbar-background-color;
+    padding: 0.2rem;
+
+    ul {
+        li {
+            display: inline-block;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            &.active {
+                color: $navbar-color-hover;
+                font-weight: bolder;
+            }
+
+            &:hover {
+                color: $navbar-color-hover;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+// --------------------------------------
+// BANDERAS
+// --------------------------------------
+
+.flag {
+    width: 24px;
+    height: 16px;
+    margin-right: 0.5rem;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 0.2rem $color-shadow;
+    vertical-align: middle;
+}
+
+// --------------------------------------
+// TARJETAS
+// --------------------------------------
+
+$cards-colors: (
+    1: #b7e19f,
+    2: #1f7bff,
+    3: #e2be36,
+    4: #da9cca
+);
+
+.card {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: $border-width $border-style $border-color;
+    border-radius: $border-radius;
+    box-shadow: 0 0 0.5rem $color-shadow;
+    background: $color-background;
+
+    img {
+        width: 100%;
+        border-radius: $border-radius;
+    }
+
+    figcaption {
+        margin-top: 0.5rem;
+        font-weight: bold;
+        color: $color-base;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+
+// --------------------------------------
+// COLORES DINÁMICOS PARA CADA TARJETA
+// --------------------------------------
+
+@for $i from 1 through 4 {
+    .card:nth-of-type(#{$i + 1}) {
+        background: map-get($cards-colors, $i);
+    }
+}
