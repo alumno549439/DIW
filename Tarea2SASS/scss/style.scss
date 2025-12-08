@@ -1,0 +1,349 @@
+$azul-oscuro: #112c50;
+$naranja: #c55a26;
+$naranja-claro: #e3be86;
+$negro: #1a1a1a;
+$azul-claro: #B9CADE;
+$overlay-oscuro: rgba(0, 0, 0, 0.45);
+$blanco: #ffffff;
+
+$max-width: 1200px;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: $blanco;
+  color: $negro;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.barra-superior {
+  background: $azul-oscuro;
+  color: $blanco;
+  font-size: 14px;
+  padding: 12px;
+
+  .container {
+    max-width: $max-width;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .derecha {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
+
+.navbar {
+  padding: 20px 0;
+  position: relative;
+  z-index: 10;
+
+  .nav-inner {
+    max-width: $max-width;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 234px;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+
+    a {
+      color: $blanco;
+      font-weight: 600;
+      transition: 0.3s ease;
+
+      &:hover {
+        color: $naranja;
+      }
+    }
+  }
+}
+
+.header {
+  position: relative;
+  background: url("../assets/img/header-background.jpg") center/cover no-repeat;
+  color: $blanco;
+  padding-bottom: 110px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: $overlay-oscuro;
+    z-index: 0;
+  }
+
+  >* {
+    position: relative; // Para que el overlay no tape el contenido
+  }
+}
+
+.header-content {
+  max-width: $max-width;
+  margin: 120px auto 0;
+
+  .texto-pequeno {
+    font-size: 14px;
+    opacity: 0.9;
+  }
+
+  h1 {
+    font-size: 48px;
+    margin: 20px 0;
+  }
+
+  .descripcion {
+    max-width: 500px;
+    opacity: 0.9;
+    line-height: 1.6;
+  }
+
+  .botones {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.boton {
+  padding: 15px 25px;
+  border-radius: 6px;
+
+  &.principal {
+    background: $naranja-claro;
+    color: $negro;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  &.secundario {
+    background: $naranja;
+    color: $blanco;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+.about {
+  max-width: $max-width;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+
+  h2 {
+    font-size: 36px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+  }
+
+  p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 25px;
+  }
+}
+
+.services {
+  text-align: center;
+  background: url("../assets/img/techo-cristal.jpg") center/cover no-repeat;
+  position: relative;
+  color: $blanco;
+  padding: 100px;
+
+  h3 {
+    font-size: 40px;
+
+  }
+
+  p {
+    margin: 20px auto;
+  }
+
+}
+
+// TEAM
+.team {
+  margin-top: 60px;
+
+  .team-inner {
+    max-width: $max-width;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.8fr 2fr;
+    gap: 40px;
+  }
+
+  .team-texto {
+
+    h3 {
+      font-size: 30px;
+      color: $azul-oscuro;
+      line-height: 1.35;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+  }
+
+  .team-card-azul {
+    display: flex;
+    flex: 1.4;
+    background-color: $azul-claro;
+    padding: 50px;
+    border-radius: 20px;
+    flex-direction: column;
+    gap: 20px;
+    width: 110%;
+    margin-bottom: 50px;
+
+    .team-fotos {
+      display: flex;
+      gap: 20px;
+
+      .foto-card {
+        flex: 1;
+
+        .foto-wrap img {
+          width: 100%;
+          aspect-ratio: 1/1.1;
+          object-fit: cover;
+          margin-bottom: 15px;
+        }
+
+        h4 {
+          margin: 0 0 5px;
+          color: $negro;
+          font-family: 'Times New Roman', Times, serif;
+        }
+
+        p {
+          font-family: 'Times New Roman', Times, serif;
+        }
+      }
+    }
+  }
+}
+
+// TESTIMONIALS
+.testimonials {
+  background-color: $azul-oscuro;
+  padding: 100px 20px;
+  color: white;
+
+  .testimonials-container {
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+}
+
+// CONTACT FORM
+.contact-form {
+  padding: 100px 20px;
+  max-width: $max-width;
+  margin: auto;
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    textarea {
+      grid-column: span 2;
+      height: 150px;
+    }
+
+    button {
+      grid-column: span 2;
+      width: 200px;
+      justify-self: start;
+    }
+  }
+}
+
+// LOCATION
+.location {
+  text-align: center;
+  padding: 80px 20px;
+
+  .map {
+    margin-top: 20px;
+
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+    }
+  }
+}
+
+// FOOTER
+footer {
+  padding: 60px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: $max-width;
+  margin: auto;
+  gap: 40px;
+
+  .footer-info,
+  .footer-nav ul,
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h4 {
+    margin-bottom: 10px;
+  }
+
+  .newsletter form {
+    display: flex;
+    gap: 10px;
+
+    input {
+      flex: 1;
+      padding: 10px;
+    }
+  }
+}
