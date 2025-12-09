@@ -8,6 +8,21 @@ $blanco: #ffffff;
 
 $max-width: 1200px;
 
+@mixin linea-decorativa {
+  position: relative;
+  padding-top: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px; 
+    left: 0;
+    width: 64px;
+    height: 8px;
+    background-color: #126F8D;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -148,7 +163,9 @@ a {
   }
 }
 
+
 .about {
+  @include linea-decorativa;
   max-width: $max-width;
   margin: 100px auto;
   display: grid;
@@ -210,8 +227,8 @@ a {
   .team-texto {
 
     h3 {
+      @include linea-decorativa;
       font-size: 30px;
-      color: $azul-oscuro;
       line-height: 1.35;
       margin-bottom: 20px;
     }
@@ -260,6 +277,7 @@ a {
     }
   }
 }
+
 
 .testimonials {
   background-color: $azul-oscuro;
@@ -319,6 +337,8 @@ footer {
   max-width: $max-width;
   margin: auto;
   gap: 40px;
+  background-color: $azul-oscuro;
+  color: white;
 
   .footer-info,
   .footer-nav ul,

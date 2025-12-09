@@ -124,6 +124,19 @@ a {
 }
 
 .about {
+  position: relative;
+  padding-top: 20px;
+}
+.about::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 64px;
+  height: 8px;
+  background-color: #126F8D;
+}
+.about {
   max-width: 1200px;
   margin: 100px auto;
   display: grid;
@@ -174,8 +187,20 @@ a {
   gap: 40px;
 }
 .team .team-texto h3 {
+  position: relative;
+  padding-top: 20px;
+}
+.team .team-texto h3::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 64px;
+  height: 8px;
+  background-color: #126F8D;
+}
+.team .team-texto h3 {
   font-size: 30px;
-  color: #112c50;
   line-height: 1.35;
   margin-bottom: 20px;
 }
@@ -268,6 +293,8 @@ footer {
   max-width: 1200px;
   margin: auto;
   gap: 40px;
+  background-color: #112c50;
+  color: white;
 }
 footer .footer-info,
 footer .footer-nav ul,
