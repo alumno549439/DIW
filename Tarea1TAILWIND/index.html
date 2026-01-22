@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/output.css">
+  </head>
+
+  <body class="bg-mio">
+    <div class="flex flex-col h-screen">
+      <header>
+        <div class="flex flex-col justify-center items-center">
+          <img
+            class="mask-radial-at-top"
+            src="ateez.png"
+            alt="foto perfil"
+          />
+          <span
+            class="text-sky-400 text-xl font-mono px-3 py-1 border rounded-full shadow-sm"
+          >
+            @andrea
+            <svg
+              class="ml-1 w-5 h-5 text-sky-400 inline"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              aria-hidden="true"
+            >
+              <path class=""></path>
+            </svg>
+          </span>
+          <h1 class="text-2xl font-bold text-purple-900 text-center">
+            Este es el HEADER
+          </h1>
+          <section class="flex gap-4">
+            <a
+              class="bg-gradient-to-tr from-purple-500 via-white to-orange-400 rounded-full flex p-2 w-12 h-12 items-center justify-center hover:bg-gray-700"
+              href="#"
+              target="_blank"
+              aria-label="Github"
+              title="Abrir Github"
+            >
+              <svg class="w-10 h-10">
+                <use href="./assets/sprite.svg#github"></use>
+              </svg>
+            </a>
+
+            <a
+              class="bg-white rounded-2xl flex p-2 w-12 h-12 items-center justify-center hover:bg-gray-300"
+              href="#"
+              target="_blank"
+              aria-label="Linkedin"
+              title="Abrir Linkedin"
+            >
+              <svg class="w-10 h-10">
+                <use href="./assets/sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+
+            <a
+              class="bg-black rounded-2xl flex p-2 w-12 h-12 items-center justify-center hover:bg-gray-700"
+              href="#"
+              target="_blank"
+              aria-label="Youtube"
+              title="Abrir Youtube"
+            >
+              <svg class="w-10 h-10">
+                <use href="./assets/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </section>
+        </div>
+      </header>
+      <main>Aqui iria el contenido</main>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>

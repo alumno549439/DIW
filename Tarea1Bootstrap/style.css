@@ -1,0 +1,41 @@
+/* Altura común para los bloques */
+.box {
+    height: 180px;
+}
+
+/* Colores */
+.pink {
+    background-color: #ff6384;
+}
+
+.sky {
+    background-color: #36a2eb;
+}
+
+.yellow {
+    background-color: #ffce56;
+}
+
+.green {
+    background-color: #4bc0c0;
+}
+
+.purple {
+    background-color: #9966ff;
+}
+
+.orange {
+    background-color: #ff9f40;
+}
+
+.blue {
+    background-color: #007bff;
+}
+
+.red {
+    background-color: #dc3545;
+}
+
+.dark {
+    background-color: #343a40;
+}
