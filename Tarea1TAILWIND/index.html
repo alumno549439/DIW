@@ -3,76 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/output.css">
+    <title>Mis enlaces</title>
+    <link rel="stylesheet" href="./assets/output.css" />
   </head>
 
-  <body class="bg-mio">
-    <div class="flex flex-col h-screen">
-      <header>
-        <div class="flex flex-col justify-center items-center">
-          <img
-            class="mask-radial-at-top"
-            src="ateez.png"
-            alt="foto perfil"
-          />
-          <span
-            class="text-sky-400 text-xl font-mono px-3 py-1 border rounded-full shadow-sm"
+  <body class="min-h-dvh max-w-xl mx-auto bg-mio">
+
+    <header class="text-center">
+
+      <img
+        src="ateez.png"
+        alt="foto de perfil"
+        class="h-[45vh] w-full object-cover
+               mask-radial-at-center
+               mask-radial-from-45%
+               mask-radial-to-65%"
+      />
+      
+      <br/>
+      <br/>
+      <div class="-mt-6 flex flex-col items-center gap-2 z-10">
+
+        <span
+          class="text-sky-400 text-xl font-mono px-3 py-1
+                 border border-sky-400/50 rounded-full
+                 flex items-center shadow-sm bg-white/70"
+        >
+          @alumno549439
+          <svg
+            class="ml-1 w-5 h-5 text-sky-400"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            aria-hidden="true"
           >
-            @andrea
-            <svg
-              class="ml-1 w-5 h-5 text-sky-400 inline"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              aria-hidden="true"
-            >
-              <path class=""></path>
-            </svg>
-          </span>
-          <h1 class="text-2xl font-bold text-purple-900 text-center">
-            Este es el HEADER
-          </h1>
-          <section class="flex gap-4">
-            <a
-              class="bg-gradient-to-tr from-purple-500 via-white to-orange-400 rounded-full flex p-2 w-12 h-12 items-center justify-center hover:bg-gray-700"
-              href="#"
-              target="_blank"
-              aria-label="Github"
-              title="Abrir Github"
-            >
-              <svg class="w-10 h-10">
-                <use href="./assets/sprite.svg#github"></use>
-              </svg>
-            </a>
+            <path
+              fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707a1 1 0 00-1.414-1.414L9 11.172l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </span>
 
-            <a
-              class="bg-white rounded-2xl flex p-2 w-12 h-12 items-center justify-center hover:bg-gray-300"
-              href="#"
-              target="_blank"
-              aria-label="Linkedin"
-              title="Abrir Linkedin"
-            >
-              <svg class="w-10 h-10">
-                <use href="./assets/sprite.svg#linkedin"></use>
-              </svg>
-            </a>
+        <h3 class="text-xl font-bold text-sky-900">
+          Andrea
+        </h3>
+      </div>
 
-            <a
-              class="bg-black rounded-2xl flex p-2 w-12 h-12 items-center justify-center hover:bg-gray-700"
-              href="#"
-              target="_blank"
-              aria-label="Youtube"
-              title="Abrir Youtube"
-            >
-              <svg class="w-10 h-10">
-                <use href="./assets/sprite.svg#youtube"></use>
-              </svg>
-            </a>
-          </section>
+      <section class="flex justify-center gap-3 mt-4">
+        <a href="http://www.linkedin.com/in/andrea-s%C3%A1nchez-reque-3b71913a8" class="social-button bg-white">
+          <svg width="28" height="28">
+            <use href="./assets/sprite.svg#linkedin"></use>
+          </svg>
+        </a>
+
+        <a href="https://github.com/alumno549439" class="social-button bg-gradient-to-tr from-blue-700 via-black to-amber-800">
+          <svg width="28" height="28">
+            <use href="./assets/sprite.svg#github"></use>
+          </svg>
+        </a>
+
+        <a href="https://youtu.be/R5EXap3vNDA?si=m8ZS49r3N48G6E32" class="social-button bg-white">
+          <svg width="28" height="28">
+            <use href="./assets/sprite.svg#youtube"></use>
+          </svg>
+        </a>
+      </section>
+    </header>
+
+    <main class="px-4 pt-6 pb-10">
+      <div class="grid grid-cols-2 gap-3">
+
+        <div class="card from-cyan-700 via-cyan-500 to-cyan-300">
+          <span>React</span>
         </div>
-      </header>
-      <main>Aqui iria el contenido</main>
-      <footer>Footer</footer>
-    </div>
+
+        <div class="card from-yellow-400 via-yellow-300 to-yellow-200">
+          <span>JavaScript</span>
+        </div>
+
+        <div class="card from-orange-500 via-orange-400 to-orange-300">
+          <span>HTML</span>
+        </div>
+
+        <div class="card from-blue-600 via-blue-500 to-blue-400">
+          <span>CSS</span>
+        </div>
+
+      </div>
+    </main>
   </body>
 </html>
