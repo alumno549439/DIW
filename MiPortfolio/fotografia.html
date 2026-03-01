@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Fotografía</title>
+  <link rel="stylesheet" href="assets/output.css">
+</head>
+
+<body class="text-gray-800">
+
+<!-- NAVBAR -->
+<nav class="absolute top-0 left-0 w-full z-20 text-white">
+  <div class="flex items-center justify-between px-6 py-4">
+
+    <!-- LOGO -->
+    <img src="svg/logo.svg" class="h-10" alt="Logo">
+
+    <!-- MENÚ DESKTOP -->
+    <div class="hidden md:flex space-x-10 text-lg">
+      <a href="informatica.html" class="hover:text-gray-300">Informática</a>
+      <a href="fotografia.html" class="hover:text-gray-300">Fotografía</a>
+      <a href="danza.html" class="hover:text-gray-300">Danza</a>
+    </div>
+
+    <button id="menuBtn" class="md:hidden">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+  </div>
+
+  <!-- PANEL MÓVIL -->
+  <div id="mobileMenu"
+       class="fixed top-0 right-0 w-full h-screen bg-black/95 transform translate-x-full transition duration-300 flex flex-col items-center justify-center space-y-8 text-2xl">
+
+    <button id="closeMenu" class="absolute top-6 right-6 text-3xl">✕</button>
+    
+    <a href="informatica.html" class="hover:text-gray-300">Informática</a>
+    <a href="fotografia.html" class="hover:text-gray-300">Fotografía</a>
+    <a href="danza.html" class="hover:text-gray-300">Danza</a>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="relative h-screen overflow-hidden flex items-center justify-center text-white">
+
+  <!-- IMAGEN DE FONDO -->
+  <img 
+    src="img/fotografia/camara.jpg"
+    class="absolute inset-0 w-full h-full object-cover"
+    alt="Hero"
+  >
+
+  <!-- OVERLAY OSCURO -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <!-- CONTENIDO -->
+  <div class="relative text-center">
+    <h1 class="text-6xl font-bold">Fotografía</h1>
+    <p class="mt-4 text-xl">Memoria – Emoción – Autenticidad</p>
+  </div>
+
+</header>
+
+<!-- SERVICIOS -->
+<section class="py-20 bg-white text-center">
+
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 px-6">
+
+    <!-- ITEM -->
+    <div class="flex flex-col items-center">
+      <div class="w-20 h-20 flex items-center justify-center mb-4">
+        <img src="svg/camara.svg" class="w-full h-full object-contain">
+      </div>
+      <h3 class="font-semibold text-lg">Fotografía urbana</h3>
+      <p class="text-gray-500 text-sm">
+        Arquitectura, luz y vida cotidiana en entornos urbanos.
+      </p>
+    </div>
+
+    <!-- ITEM -->
+    <div class="flex flex-col items-center">
+      <div class="w-20 h-20 flex items-center justify-center mb-4">
+        <img src="svg/luz.svg" class="w-full h-full object-contain">
+      </div>
+      <h3 class="font-semibold text-lg">Iluminación</h3>
+      <p class="text-gray-500 text-sm">
+        Uso de luz natural y ajustes básicos de edición.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- MY STORY -->
+<section class="grid md:grid-cols-2">
+  <img src="img/me.png" class="w-full h-full object-cover">
+  <div class="p-12 flex flex-col justify-center">
+    <h2 class="text-3xl font-bold mb-4">Hola, soy Andrea</h2>
+    <p class="text-gray-600">
+      Aquí puedes contar quién eres, qué estudias y qué te gusta de la informática.
+    </p>
+  </div>
+</section>
+
+<!-- SHOWCASE -->
+<section class="py-20 bg-gray-50">
+
+  <h2 class="text-center text-sm tracking-widest text-gray-400">PORTFOLIO</h2>
+  <h3 class="text-center text-4xl font-bold mb-12">SHOWCASE</h3>
+
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- FOTO 1 -->
+      <div class="group">
+        <div class="relative w-full h-64 overflow-hidden rounded-xl shadow-md
+                    transition duration-500
+                    group-hover:shadow-2xl group-hover:-translate-y-2">
+
+          <img src="img/fotografia/arcoiris.jpg"
+               class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-black/40 opacity-0
+                      group-hover:opacity-100 transition duration-500
+                      flex flex-col items-center justify-center text-white text-center px-4">
+
+            <span class="text-xl font-semibold">Arcoiris</span>
+            <span class="text-sm opacity-80 mt-1">Naturaleza</span>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="relative w-full h-64 overflow-hidden rounded-xl shadow-md
+                    transition duration-500
+                    group-hover:shadow-2xl group-hover:-translate-y-2">
+
+          <img src="img/fotografia/azarquiel.jpg"
+               class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-black/40 opacity-0
+                      group-hover:opacity-100 transition duration-500
+                      flex flex-col items-center justify-center text-white text-center px-4">
+
+            <span class="text-xl font-semibold">Azarquiel</span>
+            <span class="text-sm opacity-80 mt-1">Lugar</span>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="relative w-full h-64 overflow-hidden rounded-xl shadow-md
+                    transition duration-500
+                    group-hover:shadow-2xl group-hover:-translate-y-2">
+
+          <img src="img/fotografia/coche.jpg"
+               class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-black/40 opacity-0
+                      group-hover:opacity-100 transition duration-500
+                      flex flex-col items-center justify-center text-white text-center px-4">
+
+            <span class="text-xl font-semibold">Atardecer</span>
+            <span class="text-sm opacity-80 mt-1">Naturaleza</span>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="relative w-full h-64 overflow-hidden rounded-xl shadow-md
+                    transition duration-500
+                    group-hover:shadow-2xl group-hover:-translate-y-2">
+
+          <img src="img/fotografia/gato.jpg"
+               class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-black/40 opacity-0
+                      group-hover:opacity-100 transition duration-500
+                      flex flex-col items-center justify-center text-white text-center px-4">
+
+            <span class="text-xl font-semibold">Gato</span>
+            <span class="text-sm opacity-80 mt-1">Animales</span>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="relative w-full h-64 overflow-hidden rounded-xl shadow-md
+                    transition duration-500
+                    group-hover:shadow-2xl group-hover:-translate-y-2">
+
+          <img src="img/fotografia/madrid.jpg"
+               class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-black/40 opacity-0
+                      group-hover:opacity-100 transition duration-500
+                      flex flex-col items-center justify-center text-white text-center px-4">
+
+            <span class="text-xl font-semibold">Madrid</span>
+            <span class="text-sm opacity-80 mt-1">Lugar</span>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="relative w-full h-64 overflow-hidden rounded-xl shadow-md
+                    transition duration-500
+                    group-hover:shadow-2xl group-hover:-translate-y-2">
+
+          <img src="img/fotografia/merienda.jpg"
+               class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-black/40 opacity-0
+                      group-hover:opacity-100 transition duration-500
+                      flex flex-col items-center justify-center text-white text-center px-4">
+
+            <span class="text-xl font-semibold">Tentempié</span>
+            <span class="text-sm opacity-80 mt-1">Urbano</span>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="relative w-full h-64 overflow-hidden rounded-xl shadow-md
+                    transition duration-500
+                    group-hover:shadow-2xl group-hover:-translate-y-2">
+
+          <img src="img/fotografia/pajaro.jpg"
+               class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-black/40 opacity-0
+                      group-hover:opacity-100 transition duration-500
+                      flex flex-col items-center justify-center text-white text-center px-4">
+
+            <span class="text-xl font-semibold">Pájaro</span>
+            <span class="text-sm opacity-80 mt-1">Animales</span>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="relative w-full h-64 overflow-hidden rounded-xl shadow-md
+                    transition duration-500
+                    group-hover:shadow-2xl group-hover:-translate-y-2">
+
+          <img src="img/fotografia/toledo.jpg"
+               class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-black/40 opacity-0
+                      group-hover:opacity-100 transition duration-500
+                      flex flex-col items-center justify-center text-white text-center px-4">
+
+            <span class="text-xl font-semibold">Toledo</span>
+            <span class="text-sm opacity-80 mt-1">Lugar</span>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="relative w-full h-64 overflow-hidden rounded-xl shadow-md
+                    transition duration-500
+                    group-hover:shadow-2xl group-hover:-translate-y-2">
+
+          <img src="img/fotografia/paisaje.jpg"
+               class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-black/40 opacity-0
+                      group-hover:opacity-100 transition duration-500
+                      flex flex-col items-center justify-center text-white text-center px-4">
+
+            <span class="text-xl font-semibold">Cielo nuboso</span>
+            <span class="text-sm opacity-80 mt-1">Naturaleza</span>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+  const closeBtn = document.getElementById("closeMenu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("translate-x-full");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    menu.classList.add("translate-x-full");
+  });
+</script>
+
+</body>
+</html>

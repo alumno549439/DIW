@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Baile</title>
+  <link rel="stylesheet" href="assets/output.css">
+</head>
+
+<body class="text-gray-800">
+
+<!-- NAVBAR -->
+<nav class="absolute top-0 left-0 w-full z-20 text-white">
+  <div class="flex items-center justify-between px-6 py-4">
+
+    <!-- LOGO -->
+    <img src="svg/logo.svg" class="h-10" alt="Logo">
+
+    <!-- MENÚ DESKTOP -->
+    <div class="hidden md:flex space-x-10 text-lg">
+      <a href="informatica.html" class="hover:text-gray-300">Informática</a>
+      <a href="fotografia.html" class="hover:text-gray-300">Fotografía</a>
+      <a href="danza.html" class="hover:text-gray-300">Danza</a>
+    </div>
+
+    <button id="menuBtn" class="md:hidden">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+  </div>
+
+  <!-- PANEL MÓVIL -->
+  <div id="mobileMenu"
+       class="fixed top-0 right-0 w-full h-screen bg-black/95 transform translate-x-full transition duration-300 flex flex-col items-center justify-center space-y-8 text-2xl">
+
+    <button id="closeMenu" class="absolute top-6 right-6 text-3xl">✕</button>
+    
+    <a href="informatica.html" class="hover:text-gray-300">Informática</a>
+    <a href="fotografia.html" class="hover:text-gray-300">Fotografía</a>
+    <a href="danza.html" class="hover:text-gray-300">Danza</a>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="relative h-screen overflow-hidden flex items-center justify-center text-white">
+
+  <!-- IMAGEN DE FONDO -->
+  <img 
+    src="img/danza/baile.jpg"
+    class="absolute inset-0 w-full h-full object-cover"
+    alt="Hero"
+  >
+
+  <!-- OVERLAY OSCURO -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <!-- CONTENIDO -->
+  <div class="relative text-center">
+    <h1 class="text-6xl font-bold">Danza</h1>
+    <p class="mt-4 text-xl">Movimiento – Expresión – Libertad</p>
+  </div>
+
+</header>
+
+<!-- SERVICIOS -->
+<section class="py-20 bg-white text-center">
+
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6">
+
+    <!-- ITEM -->
+    <div class="flex flex-col items-center">
+      <div class="w-20 h-20 flex items-center justify-center mb-4">
+        <svg class="w-12 h-12">
+          <use href="svg/sprites.svg#icon-dance"></use>
+        </svg>
+      </div>
+      <h3 class="font-semibold text-lg">Estilo principal</h3>
+      <p class="text-gray-500 text-sm">
+        Trabajo centrado en técnica, musicalidad y expresión corporal.
+      </p>
+    </div>
+
+    <!-- ITEM -->
+    <div class="flex flex-col items-center">
+      <div class="w-20 h-20 flex items-center justify-center mb-4">
+        <svg class="w-12 h-12">
+          <use href="svg/sprites.svg#icon-group"></use>
+        </svg>
+      </div>
+      <h3 class="font-semibold text-lg">Trabajo en equipo</h3>
+      <p class="text-gray-500 text-sm">
+        Ensayos y montaje coreográfico en grupo.
+      </p>
+    </div>
+
+    <!-- ITEM -->
+    <div class="flex flex-col items-center">
+      <div class="w-20 h-20 flex items-center justify-center mb-4">
+        <svg class="w-12 h-12">
+          <use href="svg/sprites.svg#icon-stage"></use>
+        </svg>
+      </div>
+      <h3 class="font-semibold text-lg">Experiencia escénica</h3>
+      <p class="text-gray-500 text-sm">
+        Participación en muestras y presentaciones coreográficas.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- MY STORY -->
+<section class="grid md:grid-cols-2">
+  <img src="img/me.png" class="w-full h-full object-cover">
+  <div class="p-12 flex flex-col justify-center">
+    <h2 class="text-3xl font-bold mb-4">Hola, soy Andrea</h2>
+    <p class="text-gray-600">
+      
+    </p>
+  </div>
+</section>
+
+<!-- SHOWCASE -->
+<section class="py-20">
+
+  <h2 class="text-center text-sm tracking-widest text-gray-400">PORTFOLIO</h2>
+  <h3 class="text-center text-4xl font-bold mb-12">SHOWCASE</h3>
+
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- ITEMS -->
+      <div class="relative group">
+        <div class="w-full h-64 overflow-hidden rounded-xl relative">
+
+          <img src="img/danza/golden.jpg"
+               class="absolute inset-0 w-full h-full
+                      object-cover
+                      transition duration-500 ease-out
+                      group-hover:object-contain
+                      group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-black/50
+                      opacity-0 group-hover:opacity-100
+                      transition duration-500
+                      flex items-center justify-center">
+
+            <span class="text-white text-lg font-semibold tracking-wide"><a href="https://youtu.be/xxfGhvECCJA?si=ndiwXlPMu0kWAAoh">
+              🔗 Ir al vídeo
+            </span></a>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="relative group">
+        <div class="w-full h-64 overflow-hidden rounded-xl relative">
+
+          <img src="img/danza/runwild.jpg"
+               class="absolute inset-0 w-full h-full
+                      object-cover
+                      transition duration-500 ease-out
+                      group-hover:object-contain
+                      group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-black/50
+                      opacity-0 group-hover:opacity-100
+                      transition duration-500
+                      flex items-center justify-center">
+
+            <span class="text-white text-lg font-semibold"><a href="https://youtu.be/CooQNKnKZdA?si=aoRlxE9BkGdo-arI">
+              🔗 Ir al vídeo
+            </span></a>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="relative group">
+        <div class="w-full h-64 overflow-hidden rounded-xl relative">
+
+          <img src="img/danza/sign.jpg"
+               class="absolute inset-0 w-full h-full
+                      object-cover
+                      transition duration-500 ease-out
+                      group-hover:object-contain
+                      group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-black/50
+                      opacity-0 group-hover:opacity-100
+                      transition duration-500
+                      flex items-center justify-center">
+
+            <span class="text-white text-lg font-semibold"><a href="https://youtu.be/J4naA28wpFs?si=C8jDJX4AS33QigIe">
+              🔗 Ir al vídeo
+            </span></a>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="relative group">
+        <div class="w-full h-64 overflow-hidden rounded-xl relative">
+
+          <img src="img/danza/bwl.jpeg"
+               class="absolute inset-0 w-full h-full
+                      object-cover
+                      transition duration-500 ease-out
+                      group-hover:object-contain
+                      group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-black/50
+                      opacity-0 group-hover:opacity-100
+                      transition duration-500
+                      flex items-center justify-center">
+
+            <span class="text-white text-lg font-semibold tracking-wide"><a href="https://youtu.be/p1aIQYPdGHQ?si=-xSPct1sBWt1g2EZ">
+              🔗 Ir al vídeo
+            </span></a>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="relative group">
+        <div class="w-full h-64 overflow-hidden rounded-xl relative">
+
+          <img src="img/danza/devilgame.jpg"
+               class="absolute inset-0 w-full h-full
+                      object-cover
+                      transition duration-500 ease-out
+                      group-hover:object-contain
+                      group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-black/50
+                      opacity-0 group-hover:opacity-100
+                      transition duration-500
+                      flex items-center justify-center">
+
+            <span class="text-white text-lg font-semibold tracking-wide"><a href="httpsyoutu.be0IIuqr1YhZgsi=wRSW7KlEU1Rx6SKL">
+              🔗 Ir al vídeo
+            </span></a>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+  const closeBtn = document.getElementById("closeMenu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("translate-x-full");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    menu.classList.add("translate-x-full");
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ANIMACIONES PERSONALIZADAS */
+.card-hover {
+  @apply transition duration-500 ease-in-out transform hover:scale-105 hover:shadow-2xl;
+}
+
+.overlay-hover {
+  @apply absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition duration-500 flex items-center justify-center text-white text-lg font-semibold;
+}

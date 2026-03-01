@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Informática</title>
+  <link rel="stylesheet" href="assets/output.css">
+</head>
+
+<body class="text-gray-800">
+
+<!-- NAVBAR -->
+<nav class="absolute top-0 left-0 w-full z-20 text-white">
+  <div class="flex items-center justify-between px-6 py-4">
+
+    <!-- LOGO -->
+    <img src="svg/logo.svg" class="h-10" alt="Logo">
+
+    <!-- MENÚ DESKTOP -->
+    <div class="hidden md:flex space-x-10 text-lg">
+      <a href="informatica.html" class="hover:text-gray-300">Informática</a>
+      <a href="fotografia.html" class="hover:text-gray-300">Fotografía</a>
+      <a href="danza.html" class="hover:text-gray-300">Danza</a>
+    </div>
+
+    <button id="menuBtn" class="md:hidden">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+  </div>
+
+  <!-- PANEL MÓVIL -->
+  <div id="mobileMenu"
+       class="fixed top-0 right-0 w-full h-screen bg-black/95 transform translate-x-full transition duration-300 flex flex-col items-center justify-center space-y-8 text-2xl">
+
+    <button id="closeMenu" class="absolute top-6 right-6 text-3xl">✕</button>
+
+    <a href="informatica.html" class="hover:text-gray-300">Informática</a>
+    <a href="fotografia.html" class="hover:text-gray-300">Fotografía</a>
+    <a href="danza.html" class="hover:text-gray-300">Danza</a>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="relative h-screen overflow-hidden flex items-center justify-center text-white">
+
+  <!-- IMAGEN DE FONDO -->
+  <img 
+    src="img/informatica/ordenador.jpg"
+    class="absolute inset-0 w-full h-full object-cover"
+    alt="Hero"
+  >
+
+  <!-- OVERLAY OSCURO -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <!-- CONTENIDO -->
+  <div class="relative text-center">
+    <h1 class="text-6xl font-bold">Informática</h1>
+    <p class="mt-4 text-xl">Tecnología – Desarrollo – Programación</p>
+  </div>
+
+</header>
+
+<!-- SERVICIOS -->
+<section class="py-20 bg-white text-center">
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
+
+    <!-- ITEMS -->
+    <div class="flex flex-col items-center">
+      <div class="w-20 h-20 flex items-center justify-center mb-4">
+        <img src="img/informatica/java.png" class="w-full h-full object-contain" alt="">
+      </div>
+      <h3 class="font-semibold text-lg">Java</h3>
+      <p class="text-gray-500 text-sm">Lenguaje de programación creado en 1991. Conocimientos sobre ello desde el 2023.</p>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <div class="w-20 h-20 flex items-center justify-center mb-4">
+        <img src="img/informatica/python.png" class="w-full h-full object-contain" alt="">
+      </div>
+      <h3 class="font-semibold text-lg">Python</h3>
+      <p class="text-gray-500 text-sm">Lenguaje de programación creado en 1989. Conocimientos sobre ello desde el 2025.</p>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <div class="w-20 h-20 flex items-center justify-center mb-4">
+        <img src="img/informatica/sql.png" class="w-full h-full object-contain" alt="">
+      </div>
+      <h3 class="font-semibold text-lg">SQL</h3>
+      <p class="text-gray-500 text-sm">Lenguaje de programación creado en 1974. Conocimientos sobre ello desde el 2023.</p>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <div class="w-20 h-20 flex items-center justify-center mb-4">
+        <img src="img/informatica/html.png" class="w-full h-full object-contain" alt="">
+      </div>
+      <h3 class="font-semibold text-lg">HTML5</h3>
+      <p class="text-gray-500 text-sm">Lenguaje de programación creado en 2014. Conocimientos sobre ello desde el 2020.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- MY STORY -->
+<section class="grid md:grid-cols-2">
+  <img src="img/me.png" class="w-full h-full object-cover">
+  <div class="p-12 flex flex-col justify-center">
+    <h2 class="text-3xl font-bold mb-4">Hola, soy Andrea</h2>
+    <p class="text-gray-600 leading-relaxed max-w-lg">
+      
+    </p>
+  </div>
+</section>
+
+<!-- SHOWCASE -->
+<section class="py-20">
+
+  <h2 class="text-center text-sm tracking-widest text-gray-400">PORTFOLIO</h2>
+  <h3 class="text-center text-4xl font-bold mb-12">Showcase</h3>
+
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- AMDW -->
+      <div class="relative">
+        <div class="group w-full h-64 overflow-hidden rounded-xl cursor-pointer">
+          <img src="img/informatica/amdw.jpeg" class="w-full h-full object-cover">
+
+          <div class="fixed inset-0 flex items-center justify-center
+                      opacity-0 pointer-events-none
+                      group-hover:opacity-100 group-hover:pointer-events-auto
+                      transition duration-300 z-50">
+
+            <div class="relative max-w-3xl w-full px-6">
+              <img src="img/informatica/amdw.jpeg"
+                   class="w-full h-auto rounded-xl shadow-2xl">
+
+              <div class="absolute inset-0 bg-black/20 rounded-xl"></div>
+
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="text-white text-2xl font-bold tracking-wide">AMDW</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- DAW -->
+      <div class="relative">
+        <div class="group w-full h-64 overflow-hidden rounded-xl cursor-pointer">
+          <img src="img/informatica/daw.jpg" class="w-full h-full object-cover">
+
+          <div class="fixed inset-0 flex items-center justify-center
+                      opacity-0 pointer-events-none
+                      group-hover:opacity-100 group-hover:pointer-events-auto
+                      transition duration-300 z-50">
+
+            <div class="relative max-w-3xl w-full px-6">
+              <img src="img/informatica/daw.jpg"
+                   class="w-full h-auto rounded-xl shadow-2xl">
+
+              <div class="absolute inset-0 bg-black/20 rounded-xl"></div>
+
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="text-white text-2xl font-bold tracking-wide">DAW</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- DIW -->
+      <div class="relative">
+        <div class="group w-full h-64 overflow-hidden rounded-xl cursor-pointer">
+          <img src="img/informatica/diw.png" class="w-full h-full object-cover">
+
+          <div class="fixed inset-0 flex items-center justify-center
+                      opacity-0 pointer-events-none
+                      group-hover:opacity-100 group-hover:pointer-events-auto
+                      transition duration-300 z-50">
+
+            <div class="relative max-w-3xl w-full px-6">
+              <img src="img/informatica/diw.png"
+                   class="w-full h-auto rounded-xl shadow-2xl">
+
+              <div class="absolute inset-0 bg-black/20 rounded-xl"></div>
+
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="text-white text-2xl font-bold tracking-wide">DIW</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- DWEC -->
+      <div class="relative">
+        <div class="group w-full h-64 overflow-hidden rounded-xl cursor-pointer">
+          <img src="img/informatica/dwec.jpg" class="w-full h-full object-cover">
+
+          <div class="fixed inset-0 flex items-center justify-center
+                      opacity-0 pointer-events-none
+                      group-hover:opacity-100 group-hover:pointer-events-auto
+                      transition duration-300 z-50">
+
+            <div class="relative max-w-3xl w-full px-6">
+              <img src="img/informatica/dwec.jpg"
+                   class="w-full h-auto rounded-xl shadow-2xl">
+
+              <div class="absolute inset-0 bg-black/20 rounded-xl"></div>
+
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="text-white text-2xl font-bold tracking-wide">DWEC</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- DWES -->
+      <div class="relative">
+        <div class="group w-full h-64 overflow-hidden rounded-xl cursor-pointer">
+          <img src="img/informatica/dwes.jpg" class="w-full h-full object-cover">
+
+          <div class="fixed inset-0 flex items-center justify-center
+                      opacity-0 pointer-events-none
+                      group-hover:opacity-100 group-hover:pointer-events-auto
+                      transition duration-300 z-50">
+
+            <div class="relative max-w-3xl w-full px-6">
+              <img src="img/informatica/dwes.jpg"
+                   class="w-full h-auto rounded-xl shadow-2xl">
+
+              <div class="absolute inset-0 bg-black/20 rounded-xl"></div>
+
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="text-white text-2xl font-bold tracking-wide">DWES</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- PCP -->
+      <div class="relative">
+        <div class="group w-full h-64 overflow-hidden rounded-xl cursor-pointer">
+          <img src="img/informatica/pcp.jpg" class="w-full h-full object-cover">
+
+          <div class="fixed inset-0 flex items-center justify-center
+                      opacity-0 pointer-events-none
+                      group-hover:opacity-100 group-hover:pointer-events-auto
+                      transition duration-300 z-50">
+
+            <div class="relative max-w-3xl w-full px-6">
+              <img src="img/informatica/pcp.jpg"
+                   class="w-full h-auto rounded-xl shadow-2xl">
+
+              <div class="absolute inset-0 bg-blac/20 rounded-xl"></div>
+
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="text-white text-2xl font-bold tracking-wide">PCP</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- PIMD -->
+      <div class="relative">
+        <div class="group w-full h-64 overflow-hidden rounded-xl cursor-pointer">
+          <img src="img/informatica/pimd.jpg" class="w-full h-full object-cover">
+
+          <div class="fixed inset-0 flex items-center justify-center
+                      opacity-0 pointer-events-none
+                      group-hover:opacity-100 group-hover:pointer-events-auto
+                      transition duration-300 z-50">
+
+            <div class="relative max-w-3xl w-full px-6">
+              <img src="img/informatica/pimd.jpg"
+                   class="w-full h-auto rounded-xl shadow-2xl">
+
+              <div class="absolute inset-0 bg-black/20 rounded-xl"></div>
+
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="text-white text-2xl font-bold tracking-wide">PIMD</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+  const closeBtn = document.getElementById("closeMenu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("translate-x-full");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    menu.classList.add("translate-x-full");
+  });
+</script>
+
+</body>
+</html>
