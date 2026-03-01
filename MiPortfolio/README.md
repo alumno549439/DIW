@@ -1,7 +1,7 @@
 # Portfolio Personal
 
 ## 🌐 Web publicada
-https://TU-USUARIO.github.io/portfolio/
+
 
 ## 🛠 Tecnologías
 - HTML
